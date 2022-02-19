@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Weapons>
+
+        <!-- <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>2cmDummyWeapon</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="120" ShootSoundName="2cmNoSound" ShotsInBurst="0" />
+            <DeviateShotAngle>0.1</DeviateShotAngle>
+            <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="2cmDummyAmmoMagazine" />
+            </AmmoMagazines>
+            <ReloadTime>100</ReloadTime>
+        </Weapon> -->
+        
+    </Weapons>
+</Definitions>

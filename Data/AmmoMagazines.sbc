@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <AmmoMagazines>
+        <!-- <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>2cmDummyAmmoMagazine</SubtypeId>
+            </Id>
+            <DisplayName>Trigger Magazine</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\Small_Rocket.dds</Icon>
+            <Size>
+                <X>1.2</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>45</Mass>
+            <Volume>60</Volume>
+            <Model>Models\2cm\Beam System\Projectile_Dummy.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="2cmDummyAmmo" />
+
+            <MinimumOfferAmount>100</MinimumOfferAmount>
+            <MaximumOfferAmount>1000</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine> -->
+    </AmmoMagazines>
+</Definitions>

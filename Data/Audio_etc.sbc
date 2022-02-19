@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc2cmNoSound</SubtypeId>
+      </Id>
+      <Category>HUD</Category>
+      <MaxDistance>0.01</MaxDistance>
+      <Volume>0.0</Volume>
+      <PitchVariation>0</PitchVariation>
+      <CanBeSilencedByVoid>true</CanBeSilencedByVoid>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio\2cm\BeamSystem\ETC\Dummy.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real2cmNoSound</SubtypeId>
+      </Id>
+      <Category>HUD_R</Category>
+      <MaxDistance>0.1</MaxDistance>
+      <Volume>0.0</Volume>
+      <PitchVariation>0</PitchVariation>
+      <CanBeSilencedByVoid>true</CanBeSilencedByVoid>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio\2cm\BeamSystem\ETC\Dummy.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+  </Sounds>
+</Definitions>

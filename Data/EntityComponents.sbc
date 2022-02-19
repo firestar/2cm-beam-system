@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_ModStorageComponentDefinition">
+      <Id>
+        <TypeId>ModStorageComponent</TypeId>
+        <SubtypeId>2cm_BeamSystem</SubtypeId>
+      </Id>
+      <RegisteredStorageGuids>
+        <!-- <guid>dc7b3fd7-8498-4a4c-8add-db56efd79c36</guid>
+        <guid>a19c3f24-37eb-42ce-8f79-59d54a0b6ea2</guid>
+        <guid>e6f361c3-77f1-4ae5-8e28-13661cefce21</guid> -->
+        <guid>328a8014-1cf5-41a6-9412-9ca789410f2d</guid>
+      </RegisteredStorageGuids>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

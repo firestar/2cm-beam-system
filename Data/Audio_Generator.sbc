@@ -1,0 +1,85 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc2cmIonGenerator</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>20</MaxDistance>
+      <UpdateDistance>30</UpdateDistance>
+      <Volume>10.0</Volume>
+      <Loopable>true</Loopable>
+      <Pitch>-3</Pitch>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Generator\start.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Generator\loop.wav</Loop>
+          <End>Audio\2cm\BeamSystem\ARC\Generator\end.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real2cmIonGenerator</SubtypeId>
+      </Id>
+      <Category>R_BLOCK</Category>
+      <MaxDistance>20</MaxDistance>
+      <UpdateDistance>30</UpdateDistance>
+      <Volume>10.0</Volume>
+      <Loopable>true</Loopable>
+      <Pitch>-3</Pitch>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\REAL\Generator\start.xwm</Start>
+          <Loop>Audio\2cm\BeamSystem\REAL\Generator\loop.xwm</Loop>
+          <End>Audio\2cm\BeamSystem\REAL\Generator\end.xwm</End>
+        </Wave>
+      </Waves>
+    </Sound>
+
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc2cmLaserGenerator</SubtypeId>
+      </Id>
+      <Category>BLOCK</Category>
+      <MaxDistance>10</MaxDistance>
+      <UpdateDistance>30</UpdateDistance>
+      <Volume>0.7</Volume>
+      <Loopable>true</Loopable>
+      <Pitch>7</Pitch>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Generator\start.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Generator\loop.wav</Loop>
+          <End>Audio\2cm\BeamSystem\ARC\Generator\end.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real2cmLaserGenerator</SubtypeId>
+      </Id>
+      <Category>R_BLOCK</Category>
+      <MaxDistance>10</MaxDistance>
+      <UpdateDistance>30</UpdateDistance>
+      <Volume>0.7</Volume>
+      <Loopable>true</Loopable>
+      <Pitch>7</Pitch>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\REAL\Generator\start.xwm</Start>
+          <Loop>Audio\2cm\BeamSystem\REAL\Generator\loop.xwm</Loop>
+          <End>Audio\2cm\BeamSystem\REAL\Generator\end.xwm</End>
+        </Wave>
+      </Waves>
+    </Sound>
+
+  </Sounds>
+</Definitions>

@@ -1,0 +1,37 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CategoryClasses>
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId />
+            </Id>
+            <DisplayName>Beam Systems</DisplayName>
+            <Name>2CM_BeamSystems</Name>
+            <ItemIds>
+                <string>Passage/2CM_BS_Laser_Combiner_Large</string>
+                <string>Passage/2CM_BS_Laser_Capacitor_Large</string>
+                <string>UpgradeModule/2CM_BS_Laser_Generator_Large</string>
+                <string>UpgradeModule/2CM_BS_Laser_Spliter_Large</string>
+                <string>SmallMissileLauncher/2CM_BS_Laser_Capacitor_Manager_Large</string>
+                
+                <string>Passage/2CM_BS_Laser_Combiner_Small</string>
+                <string>Passage/2CM_BS_Laser_Capacitor_Small</string>
+                <string>UpgradeModule/2CM_BS_Laser_Generator_Small</string>
+                <string>UpgradeModule/2CM_BS_Laser_Spliter_Small</string>
+                
+                <string>Passage/2CM_BS_Ion_Combiner_Large</string>
+                <string>Passage/2CM_BS_Ion_Range_Barriel_Large</string>
+                <string>UpgradeModule/2CM_BS_Ion_Generator_sv_Large</string>
+                <string>TerminalBlock/2CM_BS_Ion_CapacitorS</string>
+                <string>UpgradeModule/2CM_BS_Ion_Active_Emitter_Large</string>
+
+                <string>Passage/2CM_BS_Ion_Combiner_Small</string>
+                <string>Passage/2CM_BS_Ion_Range_Barriel_Small</string>
+                <string>UpgradeModule/2CM_BS_Ion_Generator_sv_Small</string>
+                <string>TerminalBlock/2CM_BS_Ion_CapacitorS_Small</string>
+                <string>UpgradeModule/2CM_BS_Ion_Active_Emitter_Small</string>
+            </ItemIds>
+        </Category>
+    </CategoryClasses>
+</Definitions>

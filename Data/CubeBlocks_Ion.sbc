@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+            <Id>
+                <TypeId>UpgradeModule</TypeId>
+                <SubtypeId>2CM_BS_Ion_Generator_sv_Large</SubtypeId>
+            </Id>
+            <BlockPairName>2CM_BS_Ion_Generator_sv</BlockPairName>
+            <DisplayName>Ion Beam Generator</DisplayName>
+            <Description>Generate ion beam.
+
+Max Output: 2 IG
+Max Power Consumption: 100 MW</Description>
+            <Icon>Textures\Icons\2CM_BS_Ion_Generator_Large.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="9" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\2cm\Beam System\IonGenerator.mwm</Model>
+            <EmissiveColorPreset>2CM_BeamComponent</EmissiveColorPreset>
+            <Components>
+                <Component Subtype="MetalGrid" Count="115" />
+                <Component Subtype="SteelPlate" Count="65" />
+                <Component Subtype="Construction" Count="200" />
+                <Component Subtype="SmallTube" Count="175" />
+                <Component Subtype="LargeTube" Count="100" />
+                <Component Subtype="SteelPlate" Count="287" />
+                <Component Subtype="Computer" Count="10" />
+                <Component Subtype="Superconductor" Count="188" />
+                <Component Subtype="MetalGrid" Count="25" />
+                <Component Subtype="BulletproofGlass" Count="15" />
+            </Components>
+            <CriticalComponent Subtype="Superconductor" Index="0" />
+            <BuildTimeSeconds>165</BuildTimeSeconds>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.16" File="Models\2cm\Beam System\IonGenerator_Constr0.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\2cm\Beam System\IonGenerator_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\2cm\Beam System\IonGenerator_Constr2.mwm" />
+                <Model BuildPercentUpperBound="0.67" File="Models\2cm\Beam System\IonGenerator_Constr3.mwm" />
+                <Model BuildPercentUpperBound="0.83" File="Models\2cm\Beam System\IonGenerator_Constr4.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\2cm\Beam System\IonGenerator_Constr5.mwm" />
+            </BuildProgressModels>
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <Upgrades>
+                <MyUpgradeModuleInfo>
+                    <UpgradeType>PowerEfficiency</UpgradeType>
+                    <Modifier>0.8</Modifier>
+                    <ModifierType>Multiplicative</ModifierType>
+                </MyUpgradeModuleInfo>
+            </Upgrades>
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="1.224" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="1.224" EndX="1.303" EndY="1.7" Default="true" />
+                <MountPoint Side="Front" StartX="3.697" StartY="1.224" EndX="5" EndY="1.7" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="1.7" EndX="0.734" EndY="3.3" Default="true" />
+                <MountPoint Side="Front" StartX="4.266" StartY="1.7" EndX="5" EndY="3.3" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="3.3" EndX="1.303" EndY="3.776" Default="true" />
+                <MountPoint Side="Front" StartX="3.697" StartY="3.3" EndX="5" EndY="3.776" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="3.776" EndX="5" EndY="5" Default="true" />
+                
+                <MountPoint Side="Back" StartX="2.000" StartY="2.188" EndX="3.000" EndY="2.812" />
+                <MountPoint Side="Back" StartX="1.768" StartY="1.197" EndX="1.943" EndY="3.803" />
+                <MountPoint Side="Back" StartX="3.057" StartY="1.197" EndX="3.232" EndY="3.803" />
+                <MountPoint Side="Back" StartX="0.111" StartY="0.111" EndX="0.556" EndY="1.500" />
+                <MountPoint Side="Back" StartX="0.556" StartY="0.111" EndX="1.111" EndY="1.111" />
+                <MountPoint Side="Back" StartX="1.111" StartY="0.111" EndX="1.500" EndY="0.556" />
+                <MountPoint Side="Back" StartX="0.111" StartY="3.500" EndX="0.556" EndY="4.889" />
+                <MountPoint Side="Back" StartX="0.556" StartY="3.889" EndX="1.111" EndY="4.889" />
+                <MountPoint Side="Back" StartX="1.111" StartY="4.444" EndX="1.500" EndY="4.889" />
+                <MountPoint Side="Back" StartX="4.444" StartY="0.111" EndX="4.889" EndY="1.500" />
+                <MountPoint Side="Back" StartX="3.889" StartY="0.111" EndX="4.444" EndY="1.111" />
+                <MountPoint Side="Back" StartX="3.500" StartY="0.111" EndX="3.889" EndY="0.556" />
+                <MountPoint Side="Back" StartX="4.444" StartY="3.500" EndX="4.889" EndY="4.889" />
+                <MountPoint Side="Back" StartX="3.889" StartY="3.889" EndX="4.444" EndY="4.889" />
+                <MountPoint Side="Back" StartX="3.500" StartY="4.444" EndX="3.889" EndY="4.889" />
+
+                <MountPoint Side="Left" StartX="0.778" StartY="0.111" EndX="8.889" EndY="0.891" />
+                <MountPoint Side="Left" StartX="0.778" StartY="4.109" EndX="8.889" EndY="4.889" />
+                <MountPoint Side="Left" StartX="0.778" StartY="0.891" EndX="2.091" EndY="1.661" />
+                <MountPoint Side="Left" StartX="0.778" StartY="3.339" EndX="2.091" EndY="4.109" />
+                <MountPoint Side="Left" StartX="2.091" StartY="0.891" EndX="2.462" EndY="1.454" />
+                <MountPoint Side="Left" StartX="2.091" StartY="3.546" EndX="2.462" EndY="4.109" />
+                <MountPoint Side="Left" StartX="2.462" StartY="0.891" EndX="7.204" EndY="1.178" />
+                <MountPoint Side="Left" StartX="2.462" StartY="3.822" EndX="7.204" EndY="4.109" />
+                <MountPoint Side="Left" StartX="7.204" StartY="0.891" EndX="7.576" EndY="1.454" />
+                <MountPoint Side="Left" StartX="7.204" StartY="3.546" EndX="7.576" EndY="4.109" />
+                <MountPoint Side="Left" StartX="7.576" StartY="0.891" EndX="8.889" EndY="1.661" />
+                <MountPoint Side="Left" StartX="7.576" StartY="3.339" EndX="8.889" EndY="4.109" />
+                <MountPoint Side="Left" StartX="4.556" StartY="1.750" EndX="5.111" EndY="1.861" />
+                <MountPoint Side="Left" StartX="4.333" StartY="1.861" EndX="5.333" EndY="1.944" />
+                <MountPoint Side="Left" StartX="4.242" StartY="1.944" EndX="4.425" EndY="2.139" />
+                <MountPoint Side="Left" StartX="5.242" StartY="1.944" EndX="5.425" EndY="2.139" />
+                <MountPoint Side="Left" StartX="4.111" StartY="2.139" EndX="4.294" EndY="2.333" />
+                <MountPoint Side="Left" StartX="5.372" StartY="2.139" EndX="5.556" EndY="2.333" />
+                <MountPoint Side="Left" StartX="4.033" StartY="2.333" EndX="4.250" EndY="2.667" />
+                <MountPoint Side="Left" StartX="5.417" StartY="2.333" EndX="5.633" EndY="2.667" />
+                <MountPoint Side="Left" StartX="4.111" StartY="2.667" EndX="4.294" EndY="2.861" />
+                <MountPoint Side="Left" StartX="5.372" StartY="2.667" EndX="5.556" EndY="2.861" />
+                <MountPoint Side="Left" StartX="4.242" StartY="2.861" EndX="4.425" EndY="3.056" />
+                <MountPoint Side="Left" StartX="5.242" StartY="2.861" EndX="5.425" EndY="3.056" />
+                <MountPoint Side="Left" StartX="4.333" StartY="3.056" EndX="5.333" EndY="3.139" />
+                <MountPoint Side="Left" StartX="4.556" StartY="3.139" EndX="5.111" EndY="3.250" />
+                <MountPoint Side="Left" StartX="2.778" StartY="1.750" EndX="3.333" EndY="1.861" />
+                <MountPoint Side="Left" StartX="2.556" StartY="1.861" EndX="3.556" EndY="1.944" />
+                <MountPoint Side="Left" StartX="2.464" StartY="1.944" EndX="2.647" EndY="2.139" />
+                <MountPoint Side="Left" StartX="3.464" StartY="1.944" EndX="3.647" EndY="2.139" />
+                <MountPoint Side="Left" StartX="2.333" StartY="2.139" EndX="2.517" EndY="2.333" />
+                <MountPoint Side="Left" StartX="3.594" StartY="2.139" EndX="3.778" EndY="2.333" />
+                <MountPoint Side="Left" StartX="2.256" StartY="2.333" EndX="2.472" EndY="2.667" />
+                <MountPoint Side="Left" StartX="3.639" StartY="2.333" EndX="3.856" EndY="2.667" />
+                <MountPoint Side="Left" StartX="2.333" StartY="2.667" EndX="2.517" EndY="2.861" />
+                <MountPoint Side="Left" StartX="3.594" StartY="2.667" EndX="3.778" EndY="2.861" />
+                <MountPoint Side="Left" StartX="2.464" StartY="2.861" EndX="2.647" EndY="3.056" />
+                <MountPoint Side="Left" StartX="3.464" StartY="2.861" EndX="3.647" EndY="3.056" />
+                <MountPoint Side="Left" StartX="2.556" StartY="3.056" EndX="3.556" EndY="3.139" />
+                <MountPoint Side="Left" StartX="2.778" StartY="3.139" EndX="3.333" EndY="3.250" />
+                <MountPoint Side="Left" StartX="6.333" StartY="1.750" EndX="6.889" EndY="1.861" />
+                <MountPoint Side="Left" StartX="6.111" StartY="1.861" EndX="7.111" EndY="1.944" />
+                <MountPoint Side="Left" StartX="6.019" StartY="1.944" EndX="6.203" EndY="2.139" />
+                <MountPoint Side="Left" StartX="7.019" StartY="1.944" EndX="7.203" EndY="2.139" />
+                <MountPoint Side="Left" StartX="5.889" StartY="2.139" EndX="6.072" EndY="2.333" />
+                <MountPoint Side="Left" StartX="7.150" StartY="2.139" EndX="7.333" EndY="2.333" />
+                <MountPoint Side="Left" StartX="5.811" StartY="2.333" EndX="6.028" EndY="2.667" />
+                <MountPoint Side="Left" StartX="7.194" StartY="2.333" EndX="7.411" EndY="2.667" />
+                <MountPoint Side="Left" StartX="5.889" StartY="2.667" EndX="6.072" EndY="2.861" />
+                <MountPoint Side="Left" StartX="7.150" StartY="2.667" EndX="7.333" EndY="2.861" />
+                <MountPoint Side="Left" StartX="6.019" StartY="2.861" EndX="6.203" EndY="3.056" />
+                <MountPoint Side="Left" StartX="7.019" StartY="2.861" EndX="7.203" EndY="3.056" />
+                <MountPoint Side="Left" StartX="6.111" StartY="3.056" EndX="7.111" EndY="3.139" />
+                <MountPoint Side="Left" StartX="6.333" StartY="3.139" EndX="6.889" EndY="3.250" />
+
+                <MountPoint Side="Right" StartX="0.111" StartY="0.111" EndX="8.222" EndY="0.891" />
+                <MountPoint Side="Right" StartX="0.111" StartY="4.109" EndX="8.222" EndY="4.889" />
+                <MountPoint Side="Right" StartX="0.111" StartY="0.891" EndX="1.424" EndY="1.661" />
+                <MountPoint Side="Right" StartX="0.111" StartY="3.339" EndX="1.424" EndY="4.109" />
+                <MountPoint Side="Right" StartX="1.424" StartY="0.891" EndX="1.796" EndY="1.454" />
+                <MountPoint Side="Right" StartX="1.424" StartY="3.546" EndX="1.796" EndY="4.109" />
+                <MountPoint Side="Right" StartX="1.796" StartY="0.891" EndX="6.538" EndY="1.178" />
+                <MountPoint Side="Right" StartX="1.796" StartY="3.822" EndX="6.538" EndY="4.109" />
+                <MountPoint Side="Right" StartX="6.538" StartY="0.891" EndX="6.909" EndY="1.454" />
+                <MountPoint Side="Right" StartX="6.538" StartY="3.546" EndX="6.909" EndY="4.109" />
+                <MountPoint Side="Right" StartX="6.909" StartY="0.891" EndX="8.222" EndY="1.661" />
+                <MountPoint Side="Right" StartX="6.909" StartY="3.339" EndX="8.222" EndY="4.109" />
+                <MountPoint Side="Right" StartX="3.889" StartY="1.750" EndX="4.444" EndY="1.861" />
+                <MountPoint Side="Right" StartX="3.667" StartY="1.861" EndX="4.667" EndY="1.944" />
+                <MountPoint Side="Right" StartX="3.575" StartY="1.944" EndX="3.758" EndY="2.139" />
+                <MountPoint Side="Right" StartX="4.575" StartY="1.944" EndX="4.758" EndY="2.139" />
+                <MountPoint Side="Right" StartX="3.444" StartY="2.139" EndX="3.628" EndY="2.333" />
+                <MountPoint Side="Right" StartX="4.706" StartY="2.139" EndX="4.889" EndY="2.333" />
+                <MountPoint Side="Right" StartX="3.367" StartY="2.333" EndX="3.583" EndY="2.667" />
+                <MountPoint Side="Right" StartX="4.750" StartY="2.333" EndX="4.967" EndY="2.667" />
+                <MountPoint Side="Right" StartX="3.444" StartY="2.667" EndX="3.628" EndY="2.861" />
+                <MountPoint Side="Right" StartX="4.706" StartY="2.667" EndX="4.889" EndY="2.861" />
+                <MountPoint Side="Right" StartX="3.575" StartY="2.861" EndX="3.758" EndY="3.056" />
+                <MountPoint Side="Right" StartX="4.575" StartY="2.861" EndX="4.758" EndY="3.056" />
+                <MountPoint Side="Right" StartX="3.667" StartY="3.056" EndX="4.667" EndY="3.139" />
+                <MountPoint Side="Right" StartX="3.889" StartY="3.139" EndX="4.444" EndY="3.250" />
+                <MountPoint Side="Right" StartX="2.111" StartY="1.750" EndX="2.667" EndY="1.861" />
+                <MountPoint Side="Right" StartX="1.889" StartY="1.861" EndX="2.889" EndY="1.944" />
+                <MountPoint Side="Right" StartX="1.797" StartY="1.944" EndX="1.981" EndY="2.139" />
+                <MountPoint Side="Right" StartX="2.797" StartY="1.944" EndX="2.981" EndY="2.139" />
+                <MountPoint Side="Right" StartX="1.667" StartY="2.139" EndX="1.850" EndY="2.333" />
+                <MountPoint Side="Right" StartX="2.928" StartY="2.139" EndX="3.111" EndY="2.333" />
+                <MountPoint Side="Right" StartX="1.589" StartY="2.333" EndX="1.806" EndY="2.667" />
+                <MountPoint Side="Right" StartX="2.972" StartY="2.333" EndX="3.189" EndY="2.667" />
+                <MountPoint Side="Right" StartX="1.667" StartY="2.667" EndX="1.850" EndY="2.861" />
+                <MountPoint Side="Right" StartX="2.928" StartY="2.667" EndX="3.111" EndY="2.861" />
+                <MountPoint Side="Right" StartX="1.797" StartY="2.861" EndX="1.981" EndY="3.056" />
+                <MountPoint Side="Right" StartX="2.797" StartY="2.861" EndX="2.981" EndY="3.056" />
+                <MountPoint Side="Right" StartX="1.889" StartY="3.056" EndX="2.889" EndY="3.139" />
+                <MountPoint Side="Right" StartX="2.111" StartY="3.139" EndX="2.667" EndY="3.250" />
+                <MountPoint Side="Right" StartX="5.667" StartY="1.750" EndX="6.222" EndY="1.861" />
+                <MountPoint Side="Right" StartX="5.444" StartY="1.861" EndX="6.444" EndY="1.944" />
+                <MountPoint Side="Right" StartX="5.353" StartY="1.944" EndX="5.536" EndY="2.139" />
+                <MountPoint Side="Right" StartX="6.353" StartY="1.944" EndX="6.536" EndY="2.139" />
+                <MountPoint Side="Right" StartX="5.222" StartY="2.139" EndX="5.406" EndY="2.333" />
+                <MountPoint Side="Right" StartX="6.483" StartY="2.139" EndX="6.667" EndY="2.333" />
+                <MountPoint Side="Right" StartX="5.144" StartY="2.333" EndX="5.361" EndY="2.667" />
+                <MountPoint Side="Right" StartX="6.528" StartY="2.333" EndX="6.744" EndY="2.667" />
+                <MountPoint Side="Right" StartX="5.222" StartY="2.667" EndX="5.406" EndY="2.861" />
+                <MountPoint Side="Right" StartX="6.483" StartY="2.667" EndX="6.667" EndY="2.861" />
+                <MountPoint Side="Right" StartX="5.353" StartY="2.861" EndX="5.536" EndY="3.056" />
+                <MountPoint Side="Right" StartX="6.353" StartY="2.861" EndX="6.536" EndY="3.056" />
+                <MountPoint Side="Right" StartX="5.444" StartY="3.056" EndX="6.444" EndY="3.139" />
+                <MountPoint Side="Right" StartX="5.667" StartY="3.139" EndX="6.222" EndY="3.250" />
+
+                <MountPoint Side="Top" StartX="0.111" StartY="0.111" EndX="0.891" EndY="8.222" />
+                <MountPoint Side="Top" StartX="4.109" StartY="0.111" EndX="4.889" EndY="8.222" />
+                <MountPoint Side="Top" StartX="0.891" StartY="0.111" EndX="1.661" EndY="1.424" />
+                <MountPoint Side="Top" StartX="3.339" StartY="0.111" EndX="4.109" EndY="1.424" />
+                <MountPoint Side="Top" StartX="0.891" StartY="1.424" EndX="1.454" EndY="1.796" />
+                <MountPoint Side="Top" StartX="3.546" StartY="1.424" EndX="4.109" EndY="1.796" />
+                <MountPoint Side="Top" StartX="0.891" StartY="1.796" EndX="1.178" EndY="6.538" />
+                <MountPoint Side="Top" StartX="3.822" StartY="1.796" EndX="4.109" EndY="6.538" />
+                <MountPoint Side="Top" StartX="0.891" StartY="6.538" EndX="1.454" EndY="6.909" />
+                <MountPoint Side="Top" StartX="3.546" StartY="6.538" EndX="4.109" EndY="6.909" />
+                <MountPoint Side="Top" StartX="0.891" StartY="6.909" EndX="1.661" EndY="8.222" />
+                <MountPoint Side="Top" StartX="3.339" StartY="6.909" EndX="4.109" EndY="8.222" />
+                <MountPoint Side="Top" StartX="1.896" StartY="0.855" EndX="2.203" EndY="1.596" />
+                <MountPoint Side="Top" StartX="2.797" StartY="0.855" EndX="3.104" EndY="1.596" />
+                <MountPoint Side="Top" StartX="1.896" StartY="6.737" EndX="2.203" EndY="7.478" />
+                <MountPoint Side="Top" StartX="2.797" StartY="6.737" EndX="3.104" EndY="7.478" />
+                <MountPoint Side="Top" StartX="2.044" StartY="2.538" EndX="2.117" EndY="3.293" />
+                <MountPoint Side="Top" StartX="2.044" StartY="3.789" EndX="2.117" EndY="4.544" />
+                <MountPoint Side="Top" StartX="2.044" StartY="5.041" EndX="2.117" EndY="5.796" />
+                <MountPoint Side="Top" StartX="2.883" StartY="2.538" EndX="2.956" EndY="3.293" />
+                <MountPoint Side="Top" StartX="2.883" StartY="3.789" EndX="2.956" EndY="4.544" />
+                <MountPoint Side="Top" StartX="2.883" StartY="5.041" EndX="2.956" EndY="5.796" />
+
+                <MountPoint Side="Bottom" StartX="0.111" StartY="0.778" EndX="0.891" EndY="8.889" />
+                <MountPoint Side="Bottom" StartX="4.109" StartY="0.778" EndX="4.889" EndY="8.889" />
+                <MountPoint Side="Bottom" StartX="0.891" StartY="0.778" EndX="1.661" EndY="2.091" />
+                <MountPoint Side="Bottom" StartX="3.339" StartY="0.778" EndX="4.109" EndY="2.091" />
+                <MountPoint Side="Bottom" StartX="0.891" StartY="2.091" EndX="1.454" EndY="2.462" />
+                <MountPoint Side="Bottom" StartX="3.546" StartY="2.091" EndX="4.109" EndY="2.462" />
+                <MountPoint Side="Bottom" StartX="0.891" StartY="2.462" EndX="1.178" EndY="7.204" />
+                <MountPoint Side="Bottom" StartX="3.822" StartY="2.462" EndX="4.109" EndY="7.204" />
+                <MountPoint Side="Bottom" StartX="0.891" StartY="7.204" EndX="1.454" EndY="7.576" />
+                <MountPoint Side="Bottom" StartX="3.546" StartY="7.204" EndX="4.109" EndY="7.576" />
+                <MountPoint Side="Bottom" StartX="0.891" StartY="7.576" EndX="1.661" EndY="8.889" />
+                <MountPoint Side="Bottom" StartX="3.339" StartY="7.576" EndX="4.109" EndY="8.889" />
+                <MountPoint Side="Bottom" StartX="1.896" StartY="1.522" EndX="2.203" EndY="2.263" />
+                <MountPoint Side="Bottom" StartX="2.797" StartY="1.522" EndX="3.104" EndY="2.263" />
+                <MountPoint Side="Bottom" StartX="1.896" StartY="7.404" EndX="2.203" EndY="8.145" />
+                <MountPoint Side="Bottom" StartX="2.797" StartY="7.404" EndX="3.104" EndY="8.145" />
+                <MountPoint Side="Bottom" StartX="2.044" StartY="3.204" EndX="2.117" EndY="3.960" />
+                <MountPoint Side="Bottom" StartX="2.044" StartY="4.456" EndX="2.117" EndY="5.211" />
+                <MountPoint Side="Bottom" StartX="2.044" StartY="5.707" EndX="2.117" EndY="6.463" />
+                <MountPoint Side="Bottom" StartX="2.883" StartY="3.204" EndX="2.956" EndY="3.960" />
+                <MountPoint Side="Bottom" StartX="2.883" StartY="4.456" EndX="2.956" EndY="5.211" />
+                <MountPoint Side="Bottom" StartX="2.883" StartY="5.707" EndX="2.956" EndY="6.463" />
+
+                <MountPoint Side="Top" StartX="0" StartY="8.35" EndX="5" EndY="9" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="0.65" />
+
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.17" EndY="1.397" />
+                <MountPoint Side="Left" StartX="0" StartY="3.603" EndX="0.17" EndY="5" />
+                <MountPoint Side="Left" StartX="0.17" StartY="0" EndX="0.65" EndY="5" />
+
+                <MountPoint Side="Right" StartX="8.83" StartY="0" EndX="9" EndY="1.397" />
+                <MountPoint Side="Right" StartX="8.83" StartY="3.603" EndX="9" EndY="5" />
+                <MountPoint Side="Right" StartX="8.35" StartY="0" EndX="8.83" EndY="5" />
+            </MountPoints>
+            <!-- <PrimarySound>ShipLrgNuclearLrg</PrimarySound> -->
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <!--<IsAirTight>true</IsAirTight>-->
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>BeamGenerator</ResourceSinkGroup>
+            <StandbyPowerConsumption>0.0001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>30.0</OperationalPowerConsumption>
+            <GeneralDamageMultiplier>5.0</GeneralDamageMultiplier>
+        </Definition>
+        
+
+        <Definition>
+            <Id>
+                <TypeId>Passage</TypeId>
+                <SubtypeId>2CM_BS_Ion_Combiner_Large</SubtypeId>
+            </Id>
+            <BlockPairName>2CM_BS_Ion_Combiner</BlockPairName>
+            <DisplayName>Ion Beam Combiner</DisplayName>
+            <Description>Can turn direction of ion beam.
+
+You can merge several ion beams with this block.
+
+Capacity: 1000 IG</Description>
+            <Icon>Textures\Icons\2CM_BS_Ion_Combiner_Large.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="5" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\2cm\Beam System\Director_5x5.mwm</Model>
+            <EmissiveColorPreset>2CM_BeamComponent</EmissiveColorPreset>
+            <Components>
+                <Component Subtype="SteelPlate" Count="50" />
+                <Component Subtype="Construction" Count="100" />
+                <Component Subtype="SmallTube" Count="25" />
+                <Component Subtype="LargeTube" Count="5" />
+                <Component Subtype="Superconductor" Count="45" />
+                <Component Subtype="SteelPlate" Count="100" />
+                <Component Subtype="SmallTube" Count="25" />
+                <Component Subtype="Construction" Count="100" />
+                <Component Subtype="MetalGrid" Count="50" />
+                <Component Subtype="BulletproofGlass" Count="50" />
+            </Components>
+            <CriticalComponent Subtype="Superconductor" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.1667" File="Models\2cm\Beam System\Director_5x5_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.3333" File="Models\2cm\Beam System\Director_5x5_Constr2.mwm" />
+                <Model BuildPercentUpperBound="0.5000" File="Models\2cm\Beam System\Director_5x5_Constr3.mwm" />
+                <Model BuildPercentUpperBound="0.6667" File="Models\2cm\Beam System\Director_5x5_Constr4.mwm" />
+                <Model BuildPercentUpperBound="0.8333" File="Models\2cm\Beam System\Director_5x5_Constr5.mwm" />
+                <Model BuildPercentUpperBound="1.0000" File="Models\2cm\Beam System\Director_5x5_Constr6.mwm" />
+            </BuildProgressModels>
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="1.224" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="1.224" EndX="1.303" EndY="1.7" Default="true" />
+                <MountPoint Side="Front" StartX="3.697" StartY="1.224" EndX="5" EndY="1.7" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="1.7" EndX="0.734" EndY="3.3" Default="true" />
+                <MountPoint Side="Front" StartX="4.266" StartY="1.7" EndX="5" EndY="3.3" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="3.3" EndX="1.303" EndY="3.776" Default="true" />
+                <MountPoint Side="Front" StartX="3.697" StartY="3.3" EndX="5" EndY="3.776" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="3.776" EndX="5" EndY="5" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="5" EndY="5" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="5" EndY="5" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.17" EndY="1.397" />
+                <MountPoint Side="Left" StartX="0" StartY="3.603" EndX="0.17" EndY="5" />
+                <MountPoint Side="Left" StartX="0.17" StartY="0" EndX="5" EndY="5" />
+                <MountPoint Side="Right" StartX="4.83" StartY="0" EndX="5" EndY="1.397" />
+                <MountPoint Side="Right" StartX="4.83" StartY="3.603" EndX="5" EndY="5" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="4.83" EndY="5" />
+            </MountPoints>
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>90</BuildTimeSeconds>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+            <DestroySound>PoofExplosionCat1</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <IsAirTight>true</IsAirTight>
+            <BlockVariants>
+                <BlockVariant>
+                    <TypeId>Passage</TypeId>
+                    <SubtypeId>2CM_BS_Ion_Combiner_Large</SubtypeId>
+                </BlockVariant>
+                <BlockVariant>
+                    <TypeId>UpgradeModule</TypeId>
+                    <SubtypeId>2CM_BS_Ion_Generator_sv_Large</SubtypeId>
+                </BlockVariant>
+                <BlockVariant>
+                    <TypeId>TerminalBlock</TypeId>
+                    <SubtypeId>2CM_BS_Ion_CapacitorS</SubtypeId>
+                </BlockVariant>
+                <BlockVariant>
+                    <TypeId>UpgradeModule</TypeId>
+                    <SubtypeId>2CM_BS_Ion_Active_Emitter_Large</SubtypeId>
+                </BlockVariant>
+                <BlockVariant>
+                    <TypeId>Passage</TypeId>
+                    <SubtypeId>2CM_BS_Ion_Range_Barrel_Large</SubtypeId>
+                </BlockVariant>
+            </BlockVariants>
+        </Definition>
+        
+
+        <Definition>
+            <Id>
+                <TypeId>TerminalBlock</TypeId>
+                <SubtypeId>2CM_BS_Ion_CapacitorS</SubtypeId>
+            </Id>
+            <BlockPairName>2CM_BS_Ion_Capacitor</BlockPairName>
+            <DisplayName>Ion Capacitor</DisplayName>
+            <Description>The capacity of the "Ion Beam Combiner" can be expanded with this module.
+
+This is a upgrade module for the "Ion Beam Combiner".
+Place it correctly in the slot of the "Ion Beam Combiner" for expand capacity.
+
+Capacity: 1500 IG</Description>
+            <Icon>Textures\Icons\2CM_BS_Ion_Capacitor.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="8" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\2cm\Beam System\IonCapacitorS.mwm</Model>
+            <EmissiveColorPreset>2CM_BeamModule</EmissiveColorPreset>
+            <Components>
+                <Component Subtype="MetalGrid" Count="75" />
+                <Component Subtype="Construction" Count="70" />
+                <Component Subtype="SmallTube" Count="25" />
+                <Component Subtype="LargeTube" Count="10" />
+                <Component Subtype="SteelPlate" Count="75" />
+                <Component Subtype="Superconductor" Count="45" />
+                <Component Subtype="SteelPlate" Count="25" />
+                <Component Subtype="BulletproofGlass" Count="15" />
+            </Components>
+            <CriticalComponent Subtype="Superconductor" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.1667" File="Models\2cm\Beam System\IonCapacitorS_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.3333" File="Models\2cm\Beam System\IonCapacitorS_Constr2.mwm" />
+                <Model BuildPercentUpperBound="0.5000" File="Models\2cm\Beam System\IonCapacitorS_Constr3.mwm" />
+                <Model BuildPercentUpperBound="0.6667" File="Models\2cm\Beam System\IonCapacitorS_Constr4.mwm" />
+                <Model BuildPercentUpperBound="0.8333" File="Models\2cm\Beam System\IonCapacitorS_Constr5.mwm" />
+                <Model BuildPercentUpperBound="1.0000" File="Models\2cm\Beam System\IonCapacitorS_Constr6.mwm" />
+            </BuildProgressModels>
+            <MountPoints>
+                <!-- <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.4" EndY="0.4" Default="true" />
+                <MountPoint Side="Front" StartX="4.6" StartY="0" EndX="5" EndY="0.4" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="4.6" EndX="0.4" EndY="5" Default="true" />
+                <MountPoint Side="Front" StartX="4.6" StartY="4.6" EndX="5" EndY="5" Default="true" /> -->
+                <MountPoint Side="Front" StartX="2.4" StartY="2.4" EndX="2.6" EndY="2.6" Default="true" />
+                <MountPoint Side="Back" StartX="1.8236" StartY="3.2264" EndX="3.1764" EndY="3.7143" />
+                <MountPoint Side="Back" StartX="1.4607" StartY="2.6807" EndX="3.5393" EndY="3.2264" />
+                <MountPoint Side="Back" StartX="1.2857" StartY="1.9029" EndX="3.7143" EndY="2.6807" />
+                <MountPoint Side="Back" StartX="1.5029" StartY="1.4293" EndX="3.4971" EndY="1.9029" />
+                <MountPoint Side="Top" StartX="1.8" StartY="5" EndX="3.2" EndY="5.75" />
+                <MountPoint Side="Top" StartX="2.1" StartY="0.35" EndX="2.9" EndY="5" />
+                <MountPoint Side="Top" StartX="0" StartY="7" EndX="0.5" EndY="8" />
+                <MountPoint Side="Top" StartX="4.5" StartY="7" EndX="5" EndY="8" />
+                <MountPoint Side="Right" StartY="0" StartX="7" EndY="0.5" EndX="8" />
+                <MountPoint Side="Right" StartY="4.5" StartX="7" EndY="5" EndX="8" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Bottom" StartX="4.5" StartY="0" EndX="5" EndY="1" />
+                <MountPoint Side="Left" StartY="0" StartX="0" EndY="0.5" EndX="1" />
+                <MountPoint Side="Left" StartY="4.5" StartX="0" EndY="5" EndX="1" />
+            </MountPoints>
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>180</BuildTimeSeconds>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+            <DestroySound>PoofExplosionCat1</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <IsAirTight>false</IsAirTight>
+            <GeneralDamageMultiplier>5.0</GeneralDamageMultiplier>
+        </Definition>
+        
+        
+        <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+            <Id>
+                <TypeId>UpgradeModule</TypeId>
+                <SubtypeId>2CM_BS_Ion_Active_Emitter_Large</SubtypeId>
+            </Id>
+            <BlockPairName>2CM_BS_Ion_Active_Emitter</BlockPairName>
+            <DisplayName>Ion Beam Active Emitter</DisplayName>
+            <Description>The emitter of the "Ion Beam Combiner" can be customize output.
+
+This is a emitter module for the "Ion Beam Combiner".
+Place it correctly in the slot of the "Ion Beam Combiner" for add extra emitter.</Description>
+            <Icon>Textures\Icons\2CM_BS_Ion_Active_Emitter_Large.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\2cm\Beam System\IonActiveEmitter.mwm</Model>
+            <EmissiveColorPreset>2CM_BeamModule</EmissiveColorPreset>
+            <Components>
+                <Component Subtype="SteelPlate" Count="50" />
+                <Component Subtype="Construction" Count="50" />
+                <Component Subtype="SmallTube" Count="15" />
+                <Component Subtype="LargeTube" Count="2" />
+                <Component Subtype="Computer" Count="2" />
+                <Component Subtype="Superconductor" Count="15" />
+                <Component Subtype="SteelPlate" Count="50" />
+                <Component Subtype="SmallTube" Count="10" />
+                <Component Subtype="Construction" Count="25" />
+                <Component Subtype="MetalGrid" Count="10" />
+                <Component Subtype="BulletproofGlass" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Superconductor" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.1667" File="Models\2cm\Beam System\IonActiveEmitter_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.3333" File="Models\2cm\Beam System\IonActiveEmitter_Constr2.mwm" />
+                <Model BuildPercentUpperBound="0.5000" File="Models\2cm\Beam System\IonActiveEmitter_Constr3.mwm" />
+                <Model BuildPercentUpperBound="0.6667" File="Models\2cm\Beam System\IonActiveEmitter_Constr4.mwm" />
+                <Model BuildPercentUpperBound="0.8333" File="Models\2cm\Beam System\IonActiveEmitter_Constr5.mwm" />
+                <Model BuildPercentUpperBound="1.0000" File="Models\2cm\Beam System\IonActiveEmitter_Constr6.mwm" />
+            </BuildProgressModels>
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="1.224" />
+                <MountPoint Side="Front" StartX="0" StartY="1.224" EndX="1.303" EndY="1.7" />
+                <MountPoint Side="Front" StartX="3.697" StartY="1.224" EndX="5" EndY="1.7" />
+                <!-- <MountPoint Side="Front" StartX="0" StartY="1.7" EndX="0.734" EndY="3.3" />
+                <MountPoint Side="Front" StartX="4.266" StartY="1.7" EndX="5" EndY="3.3" /> -->
+                <MountPoint Side="Front" StartX="0" StartY="3.3" EndX="1.303" EndY="3.776" />
+                <MountPoint Side="Front" StartX="3.697" StartY="3.3" EndX="5" EndY="3.776" />
+                <MountPoint Side="Front" StartX="0" StartY="3.776" EndX="5" EndY="5" />
+                
+                <!-- <MountPoint Side="Back" StartX="0" StartY="0.4" EndX="0.4" EndY="4.6" Default="true" />
+                <MountPoint Side="Back" StartX="4.6" StartY="0.4" EndX="5" EndY="4.6" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1.3" EndY="0.2" Default="true" />
+                <MountPoint Side="Back" StartX="3.7" StartY="0" EndX="5" EndY="0.2" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="0.2" EndX="5" EndY="0.4" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="4.6" EndX="5" EndY="4.8" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="4.8" EndX="1.3" EndY="5" Default="true" />
+                <MountPoint Side="Back" StartX="3.7" StartY="4.8" EndX="5" EndY="5" Default="true" /> -->
+                <MountPoint Side="Back" StartX="2.4" StartY="2.4" EndX="2.6" EndY="2.6" Default="true" />
+
+                <MountPoint Side="Top" StartY="0" StartX="0" EndY="0.45" EndX="1.397" />
+                <MountPoint Side="Top" StartY="0" StartX="3.603" EndY="0.45" EndX="5" />
+                <MountPoint Side="Top" StartY="0.15" StartX="2.1" EndY="0.45" EndX="2.9" />
+                <MountPoint Side="Top" StartY="0.45" StartX="0" EndY="0.85" EndX="5" />
+                <MountPoint Side="Top" StartY="0.85" StartX="0" EndY="1" EndX="1.397" />
+                <MountPoint Side="Top" StartY="0.85" StartX="3.603" EndY="1" EndX="5" />
+
+                <MountPoint Side="Bottom" StartY="0.55" StartX="0" EndY="1" EndX="1.397" />
+                <MountPoint Side="Bottom" StartY="0.55" StartX="3.603" EndY="1" EndX="5" />
+                <MountPoint Side="Bottom" StartY="0.55" StartX="2.1" EndY="0.85" EndX="2.9" />
+                <MountPoint Side="Bottom" StartY="0.15" StartX="0" EndY="0.55" EndX="5" />
+                <MountPoint Side="Bottom" StartY="0" StartX="0" EndY="0.15" EndX="1.397" />
+                <MountPoint Side="Bottom" StartY="0" StartX="3.603" EndY="0.15" EndX="5" />
+
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.3" EndY="1.397" />
+                <MountPoint Side="Left" StartX="0" StartY="3.603" EndX="0.3" EndY="5" />
+                <MountPoint Side="Left" StartX="0.3" StartY="0" EndX="0.7" EndY="5" />
+                <MountPoint Side="Left" StartX="0.7" StartY="0" EndX="1" EndY="1.397" />
+                <MountPoint Side="Left" StartX="0.7" StartY="3.603" EndX="1" EndY="5" />
+                <MountPoint Side="Left" StartX="0.7" StartY="2.1" EndX="1" EndY="2.9" />
+
+                <MountPoint Side="Right" StartX="0.7" StartY="0" EndX="1" EndY="1.397" />
+                <MountPoint Side="Right" StartX="0.7" StartY="3.603" EndX="1" EndY="5" />
+                <MountPoint Side="Right" StartX="0.3" StartY="0" EndX="0.7" EndY="5" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.3" EndY="1.397" />
+                <MountPoint Side="Right" StartX="0" StartY="3.603" EndX="0.3" EndY="5" />
+                <MountPoint Side="Right" StartX="0" StartY="2.1" EndX="0.3" EndY="2.9" />
+            </MountPoints>
+            <!-- <PrimarySound>ShipLrgNuclearLrg</PrimarySound> -->
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <!--<IsAirTight>true</IsAirTight>-->
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>BeamGenerator</ResourceSinkGroup>
+            <StandbyPowerConsumption>0.0001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>30.0</OperationalPowerConsumption>
+            <GeneralDamageMultiplier>5.0</GeneralDamageMultiplier>
+        </Definition>
+        
+        
+        <Definition>
+            <Id>
+                <TypeId>Passage</TypeId>
+                <SubtypeId>2CM_BS_Ion_Range_Barrel_Large</SubtypeId>
+            </Id>
+            <BlockPairName>2CM_BS_Ion_Range_Barrel</BlockPairName>
+            <DisplayName>Ion Beam Long-range Barrel</DisplayName>
+            <Description>The Barrel module of the "Ion Beam" can extend beam range.
+
+This is a Barrel module for Ion Beam.
+This module can extends range of beam, but decrease area of effect.
+
+Range: X 2
+Area of Effect: -85 %</Description>
+            <Icon>Textures\Icons\2CM_BS_Ion_Range_Barrel_Large.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="8" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\2cm\Beam System\IonRangeBarrel.mwm</Model>
+            <EmissiveColorPreset>2CM_BeamModule</EmissiveColorPreset>
+            <Components>
+                <Component Subtype="SteelPlate" Count="150" />
+                <Component Subtype="Construction" Count="75" />
+                <Component Subtype="SmallTube" Count="35" />
+                <Component Subtype="LargeTube" Count="7" />
+                <Component Subtype="Superconductor" Count="35" />
+                <Component Subtype="SteelPlate" Count="75" />
+                <Component Subtype="SmallTube" Count="20" />
+                <Component Subtype="Construction" Count="50" />
+                <Component Subtype="MetalGrid" Count="20" />
+            </Components>
+            <CriticalComponent Subtype="Superconductor" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.1667" File="Models\2cm\Beam System\IonRangeBarrel_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.3333" File="Models\2cm\Beam System\IonRangeBarrel_Constr2.mwm" />
+                <Model BuildPercentUpperBound="0.5000" File="Models\2cm\Beam System\IonRangeBarrel_Constr3.mwm" />
+                <Model BuildPercentUpperBound="0.6667" File="Models\2cm\Beam System\IonRangeBarrel_Constr4.mwm" />
+                <Model BuildPercentUpperBound="0.8333" File="Models\2cm\Beam System\IonRangeBarrel_Constr5.mwm" />
+                <Model BuildPercentUpperBound="1.0000" File="Models\2cm\Beam System\IonRangeBarrel_Constr6.mwm" />
+            </BuildProgressModels>
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0.4" EndX="0.4" EndY="4.6" Default="true" />
+                <MountPoint Side="Back" StartX="4.6" StartY="0.4" EndX="5" EndY="4.6" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1.3" EndY="0.2" Default="true" />
+                <MountPoint Side="Back" StartX="3.7" StartY="0" EndX="5" EndY="0.2" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="0.2" EndX="5" EndY="0.4" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="4.6" EndX="5" EndY="4.8" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="4.8" EndX="1.3" EndY="5" Default="true" />
+                <MountPoint Side="Back" StartX="3.7" StartY="4.8" EndX="5" EndY="5" Default="true" />
+
+                <MountPoint Side="Top" StartY="0" StartX="0" EndY="0.45" EndX="1.397" />
+                <MountPoint Side="Top" StartY="0" StartX="3.603" EndY="0.45" EndX="5" />
+                <MountPoint Side="Top" StartY="0.15" StartX="2.1" EndY="0.45" EndX="2.9" />
+                <MountPoint Side="Top" StartY="0.45" StartX="0" EndY="0.85" EndX="5" />
+                <MountPoint Side="Top" StartY="0.85" StartX="0" EndY="1" EndX="1.397" />
+                <MountPoint Side="Top" StartY="0.85" StartX="3.603" EndY="1" EndX="5" />
+
+                <MountPoint Side="Bottom" StartY="7.55" StartX="0" EndY="8" EndX="1.397" />
+                <MountPoint Side="Bottom" StartY="7.55" StartX="3.603" EndY="8" EndX="5" />
+                <MountPoint Side="Bottom" StartY="7.55" StartX="2.1" EndY="7.85" EndX="2.9" />
+                <MountPoint Side="Bottom" StartY="7.15" StartX="0" EndY="7.55" EndX="5" />
+                <MountPoint Side="Bottom" StartY="7" StartX="0" EndY="7.15" EndX="1.397" />
+                <MountPoint Side="Bottom" StartY="7" StartX="3.603" EndY="7.15" EndX="5" />
+
+                <MountPoint Side="Left" StartX="7" StartY="0" EndX="7.3" EndY="1.397" />
+                <MountPoint Side="Left" StartX="7" StartY="3.603" EndX="7.3" EndY="5" />
+                <MountPoint Side="Left" StartX="7.3" StartY="0" EndX="7.7" EndY="5" />
+                <MountPoint Side="Left" StartX="7.7" StartY="0" EndX="8" EndY="1.397" />
+                <MountPoint Side="Left" StartX="7.7" StartY="3.603" EndX="8" EndY="5" />
+                <MountPoint Side="Left" StartX="7.7" StartY="2.1" EndX="8" EndY="2.9" />
+
+                <MountPoint Side="Right" StartX="0.7" StartY="0" EndX="1" EndY="1.397" />
+                <MountPoint Side="Right" StartX="0.7" StartY="3.603" EndX="1" EndY="5" />
+                <MountPoint Side="Right" StartX="0.3" StartY="0" EndX="0.7" EndY="5" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.3" EndY="1.397" />
+                <MountPoint Side="Right" StartX="0" StartY="3.603" EndX="0.3" EndY="5" />
+                <MountPoint Side="Right" StartX="0" StartY="2.1" EndX="0.3" EndY="2.9" />
+            </MountPoints>
+            <!-- <PrimarySound>ShipLrgNuclearLrg</PrimarySound> -->
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <!--<IsAirTight>true</IsAirTight>-->
+        </Definition>
+        
+
+
+
+        
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+            <Id>
+                <TypeId>BatteryBlock</TypeId>
+                <SubtypeId>2CM_BS_Ion_Electricity_Converter_Large</SubtypeId>
+            </Id>
+            <BlockPairName>2CM_BS_Ion_Energy_Converter</BlockPairName>
+            <DisplayName>Ion Electricity Converter</DisplayName>
+            <Description>Ion Beam Combiner can generate electricity with this module.
+
+This is a upgrade module for the "Ion Beam Combiner".
+Place it correctly in the slot of the "Ion Beam Combiner" for generate electricity.
+
+Max convert: 30% of beam energy</Description>
+            <Icon>Textures\Icons\2CM_BS_Ion_Electricity_Converter.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="8" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\2cm\Beam System\IonCapacitorS.mwm</Model>
+            <EmissiveColorPreset>2CM_BeamModule</EmissiveColorPreset>
+            <Components>
+                <Component Subtype="MetalGrid" Count="75" />
+                <Component Subtype="Construction" Count="70" />
+                <Component Subtype="SmallTube" Count="25" />
+                <Component Subtype="LargeTube" Count="10" />
+                <Component Subtype="SteelPlate" Count="75" />
+                <Component Subtype="Superconductor" Count="45" />
+                <Component Subtype="SteelPlate" Count="25" />
+                <Component Subtype="BulletproofGlass" Count="15" />
+            </Components>
+            <CriticalComponent Subtype="Superconductor" Index="0" />
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.1667" File="Models\2cm\Beam System\IonCapacitorS_Constr1.mwm" />
+                <Model BuildPercentUpperBound="0.3333" File="Models\2cm\Beam System\IonCapacitorS_Constr2.mwm" />
+                <Model BuildPercentUpperBound="0.5000" File="Models\2cm\Beam System\IonCapacitorS_Constr3.mwm" />
+                <Model BuildPercentUpperBound="0.6667" File="Models\2cm\Beam System\IonCapacitorS_Constr4.mwm" />
+                <Model BuildPercentUpperBound="0.8333" File="Models\2cm\Beam System\IonCapacitorS_Constr5.mwm" />
+                <Model BuildPercentUpperBound="1.0000" File="Models\2cm\Beam System\IonCapacitorS_Constr6.mwm" />
+            </BuildProgressModels>
+            <MountPoints>
+                <!-- <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.4" EndY="0.4" Default="true" />
+                <MountPoint Side="Front" StartX="4.6" StartY="0" EndX="5" EndY="0.4" Default="true" />
+                <MountPoint Side="Front" StartX="0" StartY="4.6" EndX="0.4" EndY="5" Default="true" />
+                <MountPoint Side="Front" StartX="4.6" StartY="4.6" EndX="5" EndY="5" Default="true" /> -->
+                <MountPoint Side="Front" StartX="2.4" StartY="2.4" EndX="2.6" EndY="2.6" Default="true" />
+                <MountPoint Side="Back" StartX="1.8236" StartY="3.2264" EndX="3.1764" EndY="3.7143" />
+                <MountPoint Side="Back" StartX="1.4607" StartY="2.6807" EndX="3.5393" EndY="3.2264" />
+                <MountPoint Side="Back" StartX="1.2857" StartY="1.9029" EndX="3.7143" EndY="2.6807" />
+                <MountPoint Side="Back" StartX="1.5029" StartY="1.4293" EndX="3.4971" EndY="1.9029" />
+                <MountPoint Side="Top" StartX="1.8" StartY="5" EndX="3.2" EndY="5.75" />
+                <MountPoint Side="Top" StartX="2.1" StartY="0.35" EndX="2.9" EndY="5" />
+                <MountPoint Side="Top" StartX="0" StartY="7" EndX="0.5" EndY="8" />
+                <MountPoint Side="Top" StartX="4.5" StartY="7" EndX="5" EndY="8" />
+                <MountPoint Side="Right" StartY="0" StartX="7" EndY="0.5" EndX="8" />
+                <MountPoint Side="Right" StartY="4.5" StartX="7" EndY="5" EndX="8" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Bottom" StartX="4.5" StartY="0" EndX="5" EndY="1" />
+                <MountPoint Side="Left" StartY="0" StartX="0" EndY="0.5" EndX="1" />
+                <MountPoint Side="Left" StartY="4.5" StartX="0" EndY="5" EndX="1" />
+            </MountPoints>
+            <MirroringX>Z</MirroringX>
+            <MirroringZ>X</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>180</BuildTimeSeconds>
+            <PrimarySound>ShipSmNuclearLrg</PrimarySound>
+            <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
+            <DamagedSound>ParticleReactor</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <GuiVisible>false</GuiVisible>
+            <IsAirTight>false</IsAirTight>
+            <GeneralDamageMultiplier>5.0</GeneralDamageMultiplier>
+
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+
+            <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
+
+            <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
+            <RequiredPowerInput>0</RequiredPowerInput>
+            <AdaptibleInput>false</AdaptibleInput>
+            <MaxPowerOutput>1200</MaxPowerOutput>
+            <MaxStoredPower>1200</MaxStoredPower>
+            <InitialStoredPowerRatio>0.0</InitialStoredPowerRatio>
+
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+
+            <Public>false</Public>
+            
+            <PCU>30</PCU>
+        </Definition>
+        
+    </CubeBlocks>
+    <BlockPositions />
+</Definitions>

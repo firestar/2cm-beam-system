@@ -1,0 +1,201 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc2cmLaserBeam</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>600</MaxDistance>
+      <!-- <UpdateDistance>650</UpdateDistance> -->
+      <Volume>5</Volume>
+      <PitchVariation>3</PitchVariation>
+      <Loopable>true</Loopable>
+      <!-- <PreventSynchronization>0</PreventSynchronization> -->
+      <!-- <RealisticFilter>realShipFilter</RealisticFilter> -->
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Laser\start.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Laser\loop.wav</Loop> 
+          <End>Audio\2cm\BeamSystem\ARC\Laser\end.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real2cmLaserBeam</SubtypeId>
+      </Id>
+      <Category>R_WEP_EXPL</Category>
+      <MaxDistance>600</MaxDistance>
+      <!-- <UpdateDistance>650</UpdateDistance> -->
+      <Volume>5</Volume>
+      <PitchVariation>3</PitchVariation>
+      <Loopable>true</Loopable>
+      <!-- <PreventSynchronization>0</PreventSynchronization> -->
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Laser\start.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Laser\loop.wav</Loop> 
+          <End>Audio\2cm\BeamSystem\ARC\Laser\end.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc2cmLaserBeamA</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>1200</MaxDistance>
+      <!-- <UpdateDistance>1300</UpdateDistance> -->
+      <Volume>10</Volume>
+      <PitchVariation>3</PitchVariation>
+      <Loopable>true</Loopable>
+      <!-- <PreventSynchronization>0</PreventSynchronization> -->
+      <!-- <RealisticFilter>realShipFilter</RealisticFilter> -->
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Laser\start_a.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Laser\loop_a.wav</Loop> 
+          <End>Audio\2cm\BeamSystem\ARC\Laser\end_a.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real2cmLaserBeamA</SubtypeId>
+      </Id>
+      <Category>R_WEP_EXPL</Category>
+      <MaxDistance>1200</MaxDistance>
+      <!-- <UpdateDistance>1300</UpdateDistance> -->
+      <Volume>10</Volume>
+      <PitchVariation>3</PitchVariation>
+      <Loopable>true</Loopable>
+      <!-- <PreventSynchronization>0</PreventSynchronization> -->
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Laser\start_a.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Laser\loop_a.wav</Loop> 
+          <End>Audio\2cm\BeamSystem\ARC\Laser\end_a.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc2cmIonBeam</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>2400</MaxDistance>
+      <!-- <UpdateDistance>2500</UpdateDistance> -->
+      <Volume>15</Volume>
+      <PitchVariation>3</PitchVariation>
+      <SoundLimit>4</SoundLimit>
+      <Loopable>true</Loopable>
+      <UpdateDistance>1300</UpdateDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <!-- <RealisticFilter>realShipFilter</RealisticFilter> -->
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Ion\start.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Ion\loop.wav</Loop> 
+          <End>Audio\2cm\BeamSystem\ARC\Ion\end.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real2cmIonBeam</SubtypeId>
+      </Id>
+      <Category>R_WEP_EXPL</Category>
+      <MaxDistance>2400</MaxDistance>
+      <!-- <UpdateDistance>2500</UpdateDistance> -->
+      <Volume>15</Volume>
+      <PitchVariation>3</PitchVariation>
+      <Loopable>true</Loopable>
+      <UpdateDistance>1300</UpdateDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Ion\start.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Ion\loop.wav</Loop> 
+          <End>Audio\2cm\BeamSystem\ARC\Ion\end.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc2cmIonBeamA</SubtypeId>
+      </Id>
+      <Category>WEP_EXPL</Category>
+      <MaxDistance>4800</MaxDistance>
+      <!-- <UpdateDistance>5000</UpdateDistance> -->
+      <Volume>15</Volume>
+      <PitchVariation>3</PitchVariation>
+      <SoundLimit>4</SoundLimit>
+      <Loopable>true</Loopable>
+      <UpdateDistance>1300</UpdateDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <!-- <RealisticFilter>realShipFilter</RealisticFilter> -->
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Ion\start.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Ion\loop.wav</Loop> 
+          <End>Audio\2cm\BeamSystem\ARC\Ion\end.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real2cmIonBeamA</SubtypeId>
+      </Id>
+      <Category>R_WEP_EXPL</Category>
+      <MaxDistance>4800</MaxDistance>
+      <!-- <UpdateDistance>5000</UpdateDistance> -->
+      <Volume>15</Volume>
+      <PitchVariation>3</PitchVariation>
+      <Loopable>true</Loopable>
+      <UpdateDistance>1300</UpdateDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <RealisticFilter>realShipFilter</RealisticFilter>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\2cm\BeamSystem\ARC\Ion\start.wav</Start>
+          <Loop>Audio\2cm\BeamSystem\ARC\Ion\loop.wav</Loop> 
+          <End>Audio\2cm\BeamSystem\ARC\Ion\end.wav</End>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+  </Sounds>
+</Definitions>

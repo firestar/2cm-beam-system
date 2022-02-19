@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EmissiveColorStatePresets>
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>2CM_BeamModule</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="Red" DisplayColorName="White" Emissivity="2" />
+                <EmissiveState StateName="Working" EmissiveColorName="Red" DisplayColorName="White" Emissivity="2" />
+                <EmissiveState StateName="Warning" EmissiveColorName="Yellow" DisplayColorName="White" Emissivity="2" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>2CM_BeamComponent</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="Black" DisplayColorName="White" Emissivity="0" />
+                <EmissiveState StateName="Working" EmissiveColorName="Black" DisplayColorName="White" Emissivity="0" />
+                <EmissiveState StateName="Warning" EmissiveColorName="Black" DisplayColorName="White" Emissivity="0" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+    </EmissiveColorStatePresets>
+</Definitions>
