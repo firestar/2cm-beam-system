@@ -10,13 +10,13 @@
             <Name>2CM_BeamSystems</Name>
             <ItemIds>
                 <string>Passage/2CM_BS_Laser_Combiner_Large</string>
-                <string>Passage/2CM_BS_Laser_Capacitor_Large</string>
+                <string>TerminalBlock/2CM_BS_Laser_Capacitor_Large</string>
                 <string>UpgradeModule/2CM_BS_Laser_Generator_Large</string>
                 <string>UpgradeModule/2CM_BS_Laser_Spliter_Large</string>
                 <string>SmallMissileLauncher/2CM_BS_Laser_Capacitor_Manager_Large</string>
                 
                 <string>Passage/2CM_BS_Laser_Combiner_Small</string>
-                <string>Passage/2CM_BS_Laser_Capacitor_Small</string>
+                <string>TerminalBlock/2CM_BS_Laser_Capacitor_Small</string>
                 <string>UpgradeModule/2CM_BS_Laser_Generator_Small</string>
                 <string>UpgradeModule/2CM_BS_Laser_Spliter_Small</string>
                 

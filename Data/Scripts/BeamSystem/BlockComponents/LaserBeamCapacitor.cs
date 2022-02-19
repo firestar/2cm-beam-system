@@ -11,7 +11,7 @@ namespace BeamSystem.BlockComponents
     using VRage.Game.ModAPI;
 
     [MyEntityComponentDescriptor(
-        entityBuilderType: typeof(MyObjectBuilder_Passage),
+        entityBuilderType: typeof(MyObjectBuilder_TerminalBlock),
         useEntityUpdate: true,
         entityBuilderSubTypeNames: new string[] { "2CM_BS_Laser_Capacitor_Large", "2CM_BS_Laser_Capacitor_Small" })]
     class LaserBeamCapacitor : BeamCombiner

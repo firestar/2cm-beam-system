@@ -123,7 +123,7 @@ Max Power Consumption: 25 MW</Description>
 
         <Definition>
             <Id>
-                <TypeId>Passage</TypeId>
+                <TypeId>TerminalBlock</TypeId>
                 <SubtypeId>2CM_BS_Laser_Capacitor_Large</SubtypeId>
             </Id>
             <DisplayName>Laser Capacitor</DisplayName>
@@ -173,7 +173,7 @@ Capacity: 625 LG</Description>
         </Definition>
         <Definition>
             <Id>
-                <TypeId>Passage</TypeId>
+                <TypeId>TerminalBlock</TypeId>
                 <SubtypeId>2CM_BS_Laser_Capacitor_Small</SubtypeId>
             </Id>
             <DisplayName>Laser Capacitor</DisplayName>
@@ -311,7 +311,7 @@ Capacity: 62.5 LG</Description>
                 <SubtypeId>2CM_BS_Laser_Combiner_Large</SubtypeId>
               </BlockVariant>
               <BlockVariant>
-                <TypeId>Passage</TypeId>
+                <TypeId>TerminalBlock</TypeId>
                 <SubtypeId>2CM_BS_Laser_Capacitor_Large</SubtypeId>
               </BlockVariant>
               <BlockVariant>
@@ -377,7 +377,7 @@ Capacity: 62.5 LG</Description>
                 <SubtypeId>2CM_BS_Laser_Combiner_Small</SubtypeId>
               </BlockVariant>
               <BlockVariant>
-                <TypeId>Passage</TypeId>
+                <TypeId>TerminalBlock</TypeId>
                 <SubtypeId>2CM_BS_Laser_Capacitor_Small</SubtypeId>
               </BlockVariant>
               <BlockVariant>
