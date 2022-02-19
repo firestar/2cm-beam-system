@@ -22,7 +22,7 @@ namespace BeamSystem.TerminalControls
             property.Getter = block => block.AsCombiner()?.GetCurrentPower() ?? 0f;
             property.Enabled = IsBeamCombiner;
             property.Visible = IsBeamCombiner;
-            MyAPIGateway.TerminalControls.AddControl<IMyPassage>(property);
+            MyAPIGateway.TerminalControls.AddControl<IMyTerminalBlock>(property);
         }
 
 
